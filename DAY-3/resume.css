@@ -69,7 +69,9 @@
 .content-description-bold {
   font-weight: 300;
 }
-
+.content a {
+  text-decoration: none;
+}
 .content a:hover {
   color: rgb(5, 92, 255) !important;
 }
