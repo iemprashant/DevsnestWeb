@@ -1,0 +1,75 @@
+.mainbox {
+  width: 50%;
+  margin: auto;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20x;
+}
+.contentbox {
+  color: rgb(67, 98, 155);
+  margin: 20px;
+  border: 2px solid rgb(67, 98, 155);
+}
+.heading {
+  background-color: white;
+  margin-top: -40px;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading-top {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+.heading-bottom {
+  margin-top: 0px;
+}
+.flexrow {
+  display: flex;
+}
+.left-content {
+  flex: 40%;
+}
+.vertical-line {
+  flex: 0%;
+}
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(67, 98, 155);
+}
+.content {
+  margin: 20px 20px;
+}
+.right-content {
+  flex: 60%;
+}
+.content-tag {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline solid;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.content-heading {
+  font-family: 'Lexend', sans-serif;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content-description {
+  font-size: 12px;
+}
+.content-description-bold {
+  font-weight: 300;
+}
+
+.content a:hover {
+  color: rgb(5, 92, 255) !important;
+}
