@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 600px;
+  background-color: black;
+  margin-top: 20;
+  margin-bottom: 20;
+  height: 600px;
+  margin: auto;
+}
+.grid-container {
+  display: flex;
+}
