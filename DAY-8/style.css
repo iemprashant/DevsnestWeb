@@ -3,13 +3,50 @@ body {
   padding: 0px;
 }
 .container {
-  width: 600px;
-  background-color: black;
   margin-top: 20;
   margin-bottom: 20;
   height: 600px;
+  max-width: 440px;
   margin: auto;
 }
 .grid-container {
-  display: flex;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(22, 20px);
+  grid-template-rows: repeat(30, 20px);
+}
+.box {
+  border: solid white;
+  background-color: rgb(237, 241, 248);
+}
+.box:hover {
+  background-color: darkslategrey;
+}
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.mustard {
+  background-color: #ffdb58;
+}
+.blue {
+  background-color: skyblue;
+}
+.darkblue {
+  background-color: cyan;
+}
+.darkred {
+  background-color: darkred;
+}
+.white {
+  background-color: whitesmoke;
+}
+
+.active {
+  background-color: whitesmoke !important;
 }
