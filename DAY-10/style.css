@@ -13,7 +13,7 @@ body {
     background-color: var(--default-primary-color);
     margin: 0px;
     padding: 0px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .navbar {
@@ -25,6 +25,21 @@ body {
     justify-content: space-between;
 }
 
+.reload {
+    margin: 5px 10px;
+    padding: 5px 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.logo-img {
+    padding: 5px;
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+}
+
 .logo {
     border-radius: 4px;
     border: none;
@@ -34,34 +49,7 @@ body {
     font-size: 30px;
     font-family: 'Roboto Slab', serif !important;
     font-weight: bolder;
-    padding: 5px;
-    width: 150px;
-    margin: 5px;
-}
-
-.logo span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.logo span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.9s;
-}
-
-.logo:hover span {
-    padding-right: 25px;
-}
-
-.logo:hover span:after {
-    opacity: 1;
-    right: 0;
+    width: 100px;
 }
 
 .playgame {
@@ -88,14 +76,6 @@ body {
     background-color: var(--divider-color);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
-
-.reload {
-    margin: 5px 10px;
-    padding: 5px 20px;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
 }
 
 .reload:active {
@@ -152,6 +132,13 @@ body {
     background-color: transparent;
     display: block;
     perspective: 1000px;
+    transition: all .25s linear;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(233, 226, 226, 0.4);
+}
+
+.card:hover {
+    box-shadow: -1px 10px 29px 0px rgba(255, 255, 255, 0.8);
 }
 
 .card-inner {
