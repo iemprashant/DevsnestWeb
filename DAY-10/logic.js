@@ -75,6 +75,7 @@ function gamepopup(movescount, scorecount) {
 let moves = 50
 let score = 0
 let gamelock = true
+let gameplay = false
 let firstcardclicked
     // Show inital value to board
 changeboard(moves, '.movesnumber')
@@ -82,6 +83,7 @@ changeboard(score, '.scores')
 let cards = document.getElementsByClassName('card')
     // playgame buttons function
 document.getElementById('playBtn').addEventListener('click', function(e) {
+        gameplay = true
         gamelock = false
     })
     // reload buttons function
@@ -90,7 +92,10 @@ document.getElementById('reloadBtn').addEventListener('click', function(e) {
 })
 for (let card of cards) {
     card.addEventListener('click', (e) => {
-        if (gamelock) {
+        if (!gameplay) {
+            alert('tap on play button')
+            return
+        } else if (gamelock) {
             return
         } else {
             moves--
