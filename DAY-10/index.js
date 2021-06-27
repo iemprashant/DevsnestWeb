@@ -117,3 +117,4 @@ for (let card of cards) {
         }
     })
 }
+window.onload = start()
