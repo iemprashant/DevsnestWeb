@@ -160,7 +160,7 @@ body {
     background-color: var(--primary-text-color);
     background: url('./playing-card-back.jpg');
     background-size: cover;
-    opacity: .8;
+    opacity: .7;
 }
 
 .card-back {
