@@ -65,8 +65,8 @@ body {
 }
 
 .playgame {
-    margin: 10px;
-    padding: 5px 20px;
+    padding: 5px 30px;
+    margin: 5px 10px;
     font-size: 20px;
     font-family: 'Lexend', sans-serif;
     text-align: center;
@@ -90,10 +90,22 @@ body {
     transform: translateY(4px);
 }
 
+.reload {
+    margin: 5px 10px;
+    padding: 5px 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.reload:active {
+    transform: translateY(4px);
+}
+
 .container {
     display: flex;
     align-items: row;
-    padding-top: 20px;
+    padding: 20px 30px 0px 30px;
 }
 
 .board-container {
@@ -128,10 +140,10 @@ body {
     border: var(--accent-color) 5px solid;
     border-radius: 5px;
     height: 75vh;
-    width: 60%;
-    padding: 15px;
+    width: 57%;
+    padding: 20px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 25px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -159,8 +171,9 @@ body {
     display: block;
     position: absolute;
     background-color: var(--primary-text-color);
-    background: url('./cardbackground.png') center/35px;
-    opacity: .3;
+    background: url('./playing-card-back.jpg');
+    background-size: cover;
+    opacity: .8;
 }
 
 .card-back {
