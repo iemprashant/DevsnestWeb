@@ -153,13 +153,21 @@ body {
 }
 
 .card-front {
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
-    color: var(--divider-color)
+    display: block;
+    position: absolute;
+    background-color: var(--primary-text-color);
+    background: url('./cardbackground.png') center/35px;
+    opacity: .3;
 }
 
 .card-back {
     width: 100%;
     height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
     background-color: var(--light-primary-color);
     color: var(--dark-primary-color);
     transform: rotateY(180deg);

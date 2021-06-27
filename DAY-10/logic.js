@@ -72,7 +72,7 @@ function gamepopup(movescount, scorecount) {
 
 // Game Logic
 // utility variables
-let moves = 40
+let moves = 50
 let score = 0
 let gamelock = true
 let firstcardclicked
