@@ -1,14 +1,4 @@
-let wordsarray = [
-    'red',
-    'orange',
-    'black',
-    'blue',
-    'green',
-    'purple',
-    'pink',
-    'brown',
-    'grey',
-]
+let wordsarray = ['A', 'K', 'Q', 'J', '8', '6', '2', '4', '3']
 wordsarray = [...wordsarray, ...wordsarray]
 
 // DOM manupulation
