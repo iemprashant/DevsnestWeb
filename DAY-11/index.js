@@ -148,3 +148,5 @@ for (let choice of choices) {
 document.getElementById('reloadBtn').addEventListener('click', function(e) {
     window.location.reload()
 })
+
+window.onload = start()
