@@ -63,8 +63,6 @@ function removeChoiceColour(target, targetclass) {
 }
 
 function isanswermatch(targetanswer, defaultanswer) {
-    console.log(`${targetanswer} and ${defaultanswer} `)
-
     return targetanswer == defaultanswer
 }
 
