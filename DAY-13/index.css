@@ -104,9 +104,59 @@ h4 {
     flex-direction: column;
 }
 
+#loading {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid var(--default-primary-color);
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+    position: absolute;
+}
+
+#loading.display {
+    visibility: visible;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .tagline {
     font-family: 'Roboto Slab', serif !important;
     color: var(--primary-text-color);
+}
+
+.qod-container {
+    width: 100vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.qoddiv {
+    background-color: white;
+    width: 80%;
+    height: 50vh;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.qoddiv>p {
+    text-align: end
 }
 
 .card-container {
@@ -153,4 +203,19 @@ h4 {
 .author {
     text-align: end;
     padding-right: 1rem;
+}
+
+.Qodpopup {
+    margin-top: 5rem;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 2s ease-in-out;
+}
+
+.qod-container {
+    visibility: hidden;
 }
