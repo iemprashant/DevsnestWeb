@@ -1,0 +1,156 @@
+:root {
+    --dark-primary-color: #47597E;
+    ;
+    --light-primary-color: #DBE6FD;
+    ;
+    --default-primary-color: #7584b2;
+    ;
+    ;
+    --primary-text-color: #978755;
+    --secondary-text-color: #212121;
+    --text-primary-color: white;
+    --accent-color: #ECEFF1;
+    --divider-color: #4e5c8b;
+    font-size: 62.5%;
+    background-color: var(--light-primary-color);
+}
+
+
+/* utility class */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    transition: all 0.3s;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    margin-bottom: 3rem;
+}
+
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.1rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* maincss*/
+
+.navbar {
+    height: 10vh;
+    background-color: var(--dark-primary-color);
+    padding: 1rem 4rem;
+    box-shadow: 0 0 1rem 0 var(--primary-text-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar>span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    border: none;
+    background-color: transparent;
+    color: var(--text-primary-color);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bolder;
+}
+
+.dailybyte {
+    border: none;
+    background-color: transparent;
+    color: var(--text-primary-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    padding: 5rem 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tagline {
+    font-family: 'Roboto Slab', serif !important;
+    color: var(--primary-text-color);
+}
+
+.card-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    height: 35rem;
+    width: 22rem;
+    background-color: var(--default-primary-color);
+    color: white;
+    border-radius: 15px;
+    background: var(--default-primary-color);
+    border: solid var(--light-primary-color) 1px;
+    /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -30px;
+}
+
+.card:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.2);
+    box-shadow: .1rem .3rem .5rem .1rem var(--secondary-text-color);
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.author {
+    text-align: end;
+    padding-right: 1rem;
+}

@@ -61,7 +61,7 @@ h3 {
     height: 10vh;
     background-color: var(--dark-primary-color);
     padding: 1rem 4rem;
-    box-shadow: 0 0 1rem 0 var(--primary-text-color);
+    box-shadow: 0 0 .5rem 0 var(--primary-text-color);
     display: flex;
     justify-content: space-between;
 }
