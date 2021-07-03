@@ -1,7 +1,20 @@
 const loader = document.querySelector('#loading')
+let dailybite = false
 
 function generateRandomVariable(i, max) {
     return Math.floor(Math.random() * (max - i))
+}
+
+function displayLoading() {
+    loader.classList.add('display')
+
+    setTimeout(() => {
+        loader.classList.remove('display')
+    }, 5000)
+}
+
+function hideLoading() {
+    loader.classList.remove('display')
 }
 
 function generateCard(quote, author) {
@@ -30,6 +43,11 @@ function generateCards(arr) {
     }
 }
 
+function generateqodCard(quote, author) {
+    document.querySelector('#qodquote').innerHTML = `“${quote}”`
+    document.querySelector('#qodauthor').innerHTML = `-${author}`
+}
+
 function getData() {
     fetch('https://api.quotable.io/quotes?page=1')
         .then((response) => response.json())
@@ -40,33 +58,34 @@ function getData() {
         .catch((error) => console.log('ERROR OCCURED'))
 }
 
-function displayLoading() {
-    loader.classList.add('display')
-        // to stop loading after some time
-    setTimeout(() => {
-        loader.classList.remove('display')
-    }, 5000)
-}
-
-function hideLoading() {
-    loader.classList.remove('display')
-}
-
 function getQod() {
     fetch('https://quotes.rest/qod')
         .then((response) => response.json())
         .then((data) => {
-            console.log(data.contents.quotes[0].quote)
+            generateqodCard(
+                data.contents.quotes[0].quote,
+                data.contents.quotes[0].author
+            )
         })
         .catch((error) => console.log('ERROR OCCURED'))
 }
 
-document.getElementById('qodbtn').addEventListener('click', (e) => {
-    getQod()
+document.getElementById('qodbtn').addEventListener('click', function(e) {
+    if (dailybite === false) {
+        getQod()
+        document.getElementById('qod-container').style.visibility = 'visible'
+        dailybite = true
+    } else {
+        document.getElementById('qod-container').style.visibility = 'hidden'
+        dailybite = false
+    }
 })
-
 document.getElementById('closebtn').addEventListener('click', function(e) {
     console.log('close')
+    if (dailybite == true) {
+        document.getElementById('qod-container').style.visibility = 'hidden'
+        dailybite = false
+    }
 })
 displayLoading()
 getData()

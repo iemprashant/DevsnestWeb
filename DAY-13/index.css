@@ -94,14 +94,8 @@ h4 {
     font-weight: bolder;
 }
 
-.container {
-    width: 100vw;
-    height: 90vh;
-    padding: 5rem 10rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.dailybyte:hover {
+    color: var(--light-primary-color)
 }
 
 #loading {
@@ -143,20 +137,66 @@ h4 {
     flex-direction: column;
     position: absolute;
     z-index: 1;
+    visibility: hidden;
+    transition: none !important;
+}
+
+.qoddiv * {
+    transition: none !important;
 }
 
 .qoddiv {
     background-color: white;
     width: 80%;
-    height: 50vh;
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
 }
 
-.qoddiv>p {
-    text-align: end
+.qoddiv:hover {
+    box-shadow: 0 0 1rem 0 var(--primary-text-color);
+}
+
+.qoddiv>span {
+    text-align: end;
+}
+
+.qodcontent {
+    padding: 2rem 5rem;
+}
+
+.qodcontent>span {
+    text-align: end;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    opacity: .5;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
 }
 
 .card-container {
@@ -164,6 +204,16 @@ h4 {
     align-items: center;
     display: flex;
     height: 60vh;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    padding: 5rem 10rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -203,19 +253,4 @@ h4 {
 .author {
     text-align: end;
     padding-right: 1rem;
-}
-
-.Qodpopup {
-    margin-top: 5rem;
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    position: absolute;
-    transition: all 2s ease-in-out;
-}
-
-.qod-container {
-    visibility: hidden;
 }
