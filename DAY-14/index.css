@@ -1,0 +1,157 @@
+:root {
+    --dark-primary-color: #444444;
+    ;
+    --light-primary-color: #EDEDED;
+    ;
+    --default-primary-color: #F5F5F5;
+    ;
+    ;
+    --primary-text-color: #978755;
+    --secondary-text-color: #212121;
+    --text-primary-color: white;
+    --accent-color: #ECEFF1;
+    --divider-color: #4e5c8b;
+    font-size: 62.5%;
+    background-color: var(--light-primary-color);
+}
+
+
+/* utility class */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    transition: all 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+}
+
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* maincss*/
+
+.navbar {
+    height: 10vh;
+    background-color: var(--dark-primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.16), 0 3px 6px 0px rgba(0, 0, 0, 0.23);
+}
+
+.navbar>span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif !important;
+    color: var(--text-primary-color);
+    padding: .5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-primary-color);
+    padding: 2rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 1rem;
+    margin: .5rem 0rem;
+}
+
+.heading>h3 {
+    background-color: whitesmoke;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.card {
+    background-color: var(--text-primary-color);
+    border-radius: 1rem;
+    margin: .75rem 0rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-no {
+    width: 5vw;
+    text-align: center
+}
+
+.card-attribute {
+    width: 15vw;
+    text-align: center
+}
+
+.card-value {
+    width: 10vw;
+    text-align: center
+}
+
+.card-description {
+    width: 35vw;
+    text-align: center
+}
+
+.card-btn {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: grey;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

@@ -1,5 +1,4 @@
-const container = document.querySelector('.container')
-const eventlist = [{
+[{
     "attribute": "onclick",
     "value": "Script",
     "description": "Triggers on a mouse click "
@@ -156,28 +155,3 @@ const eventlist = [{
     "value": "Script",
     "description": "Triggers when a mouse button is released"
 }]
-for (let i = 1; i <= eventlist.length; i++) {
-    const card = document.createElement('div')
-    card.classList.add('card')
-    let No = document.createElement('h2')
-    No.innerHTML = `${i}.`
-    No.classList.add('card-no')
-    card.appendChild(No)
-    let eventattribute = document.createElement('h2')
-    eventattribute.innerHTML = eventlist[i]['attribute']
-    eventattribute.classList.add('card-attribute')
-    card.appendChild(eventattribute)
-    let eventvalue = document.createElement('h2')
-    eventvalue.innerHTML = eventlist[i]['value']
-    eventvalue.classList.add('card-value')
-    card.appendChild(eventvalue)
-    let eventdescription = document.createElement('h2')
-    eventdescription.innerHTML = eventlist[i]['description']
-    eventdescription.classList.add('card-description')
-    card.appendChild(eventdescription)
-    let Trynowbtn = document.createElement('button')
-    Trynowbtn.innerHTML = 'TryNow'
-    Trynowbtn.classList.add('card-btn')
-    card.appendChild(Trynowbtn)
-    container.appendChild(card)
-}
