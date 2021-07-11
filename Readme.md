@@ -335,7 +335,9 @@
    var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
    console.log(MostFrequent(arr1))
    ```
-
+1. # [**DoTheMaths:-CalculatorApp** (THA-5)](https://iemprashanttha5.netlify.app).🕜
+   ***
+   <img src="./THA-IMAGES/THA-5.png" alt="Markdown Monster icon">
 1. # [**Clock:-Using Animations** (THA-4)](https://iemprashanttha4.netlify.app).🕜
    ***
    <img src="./THA-IMAGES/THA-4.png" alt="Markdown Monster icon">
