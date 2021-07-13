@@ -6,7 +6,9 @@
 `You can pick up ✍ an idea for the projects ⚡ to practice here and begin`
 
 ## ⤵️List of projects🎓
-
+1. # [**React.CreateComponent & React cdn** (THA-15)](https://iemprashanttha15.netlify.app).⚛️
+   ***
+   <img src="./THA-IMAGES/THA-15.png" alt="Markdown Monster icon">
 1. # [**REMIND-QuoteApp** (THA-13)](https://iemprashanttha13.netlify.app).💭
    ***
    <img src="./THA-IMAGES/THA-13A.png" alt="Markdown Monster icon">
