@@ -5,8 +5,10 @@ export default function App() {
   return (
     <Fragment>
       <Navbar logoname="Chessboard" />
-      <div className="container">
-        <Chessboard />
+      <div className="img-container">
+        <div className="container">
+          <Chessboard />
+        </div>
       </div>
     </Fragment>
   );

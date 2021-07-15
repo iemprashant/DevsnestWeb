@@ -5,6 +5,7 @@ export default function Navbar({ logoname }) {
     <>
       <nav class="navbar">
         <span>
+        <i class="fas fa-chess"></i>
           <button class="logo">{logoname}</button>
         </span>
       </nav>
