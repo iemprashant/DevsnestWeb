@@ -7,6 +7,9 @@
 
 ## ⤵️List of projects🎓
 
+1.  # [**ChessBoard(With Props & Inline Style** (THA-18)](https://iemprashanttha18.netlify.app).♟️
+    ***
+    <img src="./THA-IMAGES/THA-18.png" alt="">
 1.  # [**ChessBoard** (THA-16)](https://iemprashanttha16.netlify.app).♟️
     ***
     <img src="./THA-IMAGES/THA-16.png" alt="">
