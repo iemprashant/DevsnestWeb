@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  height: 10vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(255, 254, 254, 0.2);
+}
+
+.navbar > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar > span > i {
+  font-size: 2.5rem;
+  color: black;
+  margin-right: 0.5rem;
+  padding: 0.25rem;
+}
+.logo {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Akaya Telivigala', cursive !important;
+  color: black;
+}
+
+.img-container {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+
+.img-container:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-image: url('./Assests/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
