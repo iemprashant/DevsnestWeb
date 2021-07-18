@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Chessboard from './Component/chessboard';
 import Navbar from './Navbar';
 export default function App() {
   var styleforcontainer = {
@@ -16,10 +15,8 @@ export default function App() {
   return (
     <Fragment>
       <Navbar logoname="Chessboard" />
-      <div className="img-container">
-        <div className="container" style={styleforcontainer}>
-          <Chessboard />
-        </div>
+      <div style={styleforcontainer}>
+        <h1>React app</h1>
       </div>
     </Fragment>
   );

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { Fragment } from 'react';
+import Cardbox from './Components/Cardbox';
+import Navbar from './Components/Navbar';
+export default function App() {
+  var styleforcontainer = {
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor:'#b3e5fc',
+    boxShadow:
+      '0 3px 6px 0px rgba(0, 0, 0, 0.16),0 3px 6px 0px rgba(0, 0, 0, 0.23)',
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar logoname="Bookmarked" bgcolor="#0288d1" logocolor="white" fontawesomeClass="far fa-bookmark"/>
+      <div style={styleforcontainer}>
+        <Cardbox/>
+      </div>
+    </Fragment>
   );
 }
-
-export default App;
