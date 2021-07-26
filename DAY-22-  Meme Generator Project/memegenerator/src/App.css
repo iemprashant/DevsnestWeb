@@ -1,0 +1,34 @@
+.App {
+  min-height: 100vh;
+  font-family: 'ABeeZee', sans-serif;
+}
+.bg-lightgreen {
+  background-color: #d9dd6b;
+}
+.bg-green {
+  background-color: #ecefa4;
+}
+.memecard {
+  height: 25rem;
+  width: 20rem;
+  margin: auto;
+}
+.card-hover :hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.meme-div-img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+.meme-img {
+  width: 100%;
+}
+.memepage {
+  height: 40rem;
+}
+.memepage-img {
+  height: 25rem;
+}
