@@ -1,0 +1,7 @@
+To study about custom hooks and react routing
+
+links : 
+
+Custom hooks : https://btholt.github.io/complete-intro-to-react-v6/custom-hooks
+
+React Routing : https://btholt.github.io/complete-intro-to-react-v6/react-router
