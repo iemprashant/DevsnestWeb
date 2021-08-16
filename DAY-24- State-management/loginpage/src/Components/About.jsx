@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const About = () => {
   return (
     <>
-      <h2>About</h2>
+      <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h2>About Page: This is Public Route</h2>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default About;

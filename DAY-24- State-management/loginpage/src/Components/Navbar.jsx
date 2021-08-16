@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ islogin }) => {
   return (
     <>
-      <nav className="bg-light text-dark text-decoration-none d-flex justify-content-around p-2">
-        <Link to="/"><h3 class="text-dark text-decoration-none"> Home</h3></Link>
-        <Link to="/about"><h3 class="text-dark text-decoration-none"> About</h3></Link>
-        <Link to="/users"><h3 class="text-dark text-decoration-none">Users</h3></Link>
-        <Link to="/Dashboard"><h3 class="text-dark text-decoration-none">Dashboard</h3></Link>
+      <nav className="bg-secondary text-light text-decoration-none d-flex justify-content-around p-3">
+        <Link to="/" class="text-light text-decoration-none"><h5 > Home</h5></Link>
+        <Link to="/about" class="text-light text-decoration-none"><h5 > About</h5></Link>
+        {islogin && <Link to="/users" class="text-light text-decoration-none"><h5 >Users</h5></Link>}
+        {islogin && <Link to="/Dashboard" class="text-light text-decoration-none"><h5 >Dashboard</h5></Link>}
       </nav>
     </>
   );
