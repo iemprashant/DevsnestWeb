@@ -6,21 +6,27 @@
 `You can pick up ✍ an idea for the projects ⚡ to practice here and begin`
 
 ## ⤵️List of projects🎓
-
-1.  # [**BookMarked Books(Added input form)** (THA-21)](https://iemprashanttha21.netlify.app).♟️
+1.  # [**LoginPage(StateManagement and Routes)** (THA-23 & 24)](https://iemprashanttha24.netlify.app).📃
+    ***
+    <img src="./THA-IMAGES/THA-24-A.png" alt="">
+    <img src="./THA-IMAGES/THA-24-B.png" alt="">
+1.  # [**Meme Generator(Meme Api)** (THA-22)](https://iemprashanttha22.netlify.app).👽
+    ***
+    <img src="./THA-IMAGES/THA-22.png" alt="">
+1.  # [**BookMarked Books(Added input form)** (THA-21)](https://iemprashanttha21.netlify.app).📚
     ***
     <img src="./THA-IMAGES/THA-21.png" alt="">
-1.  # [**BookMarked Books(Added Delete button)** (THA-20)](https://iemprashanttha20.netlify.app).♟️
+1.  # [**BookMarked Books(Added Delete button)** (THA-20)](https://iemprashanttha20.netlify.app).📘
     ***
     <img src="./THA-IMAGES/THA-20A.png" alt="">
     <img src="./THA-IMAGES/THA-20B.png" alt="">
-1.  # [**ButtonValue Update useState Hook** (THA-19)](https://iemprashanttha19.netlify.app).♟️
+1.  # [**ButtonValue Update useState Hook** (THA-19)](https://iemprashanttha19.netlify.app).🔳
     ***
     <img src="./THA-IMAGES/THA-19.png" alt="">
 1.  # [**ChessBoard(With Props & Inline Style)** (THA-18)](https://iemprashanttha18.netlify.app).♟️
     ***
     <img src="./THA-IMAGES/THA-18.png" alt="">
-1.  # [**BookMarked Books** (THA-17)](https://iemprashanttha17.netlify.app).♟️
+1.  # [**BookMarked Books** (THA-17)](https://iemprashanttha17.netlify.app).📗
     ***
     <img src="./THA-IMAGES/THA-17.png" alt="">
 1.  # [**ChessBoard** (THA-16)](https://iemprashanttha16.netlify.app).♟️
