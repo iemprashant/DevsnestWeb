@@ -5,8 +5,8 @@ import AddComponent from './Components/Addcomponent';
 import ShowlistComponent from './Components/showlistComponent';
 function App() {
   return (
-    <div className="App">
-      <h1>ToDo list</h1>
+    <div className="App container text-center bg-light d-flex flex-column mt-5 rounded shadow">
+      <h1 class="m-4">What's Up Today?👽</h1>
       <AddComponent />
       <ShowlistComponent />
     </div>
