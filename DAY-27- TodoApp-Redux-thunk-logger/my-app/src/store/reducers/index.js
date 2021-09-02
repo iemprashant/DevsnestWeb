@@ -1,4 +1,4 @@
-import counterReducer from "./counterReducer";
+import TodoReducer from "./TodoReducer";
 import { combineReducers } from "redux";
-const rootReducer = combineReducers({ counter: counterReducer });
+const rootReducer = combineReducers({ todo:TodoReducer });
 export default rootReducer;

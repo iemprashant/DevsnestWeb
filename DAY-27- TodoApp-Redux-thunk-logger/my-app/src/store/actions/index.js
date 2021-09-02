@@ -1,13 +1,13 @@
-const incNumber=()=>{
+const addTask=(item)=>{
     return{
-        type:"INC_NUMBER",
-
+        type:"ADD_TASK",
+        payload:item
     }
 }
-const decNumber=()=>{
+const removeTask=(index)=>{
     return{
-        type:"DEC_NUMBER",
-        
+        type:"REMOVE_TASK",
+        payload:index
     }
 }
-export{incNumber,decNumber}
+export{addTask,removeTask}

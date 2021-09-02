@@ -1,15 +1,14 @@
 import './App.css';
 import { incNumber, decNumber } from "./store/actions";
 import { useSelector, useDispatch } from 'react-redux';
+import AddComponent from './Components/Addcomponent';
+import ShowlistComponent from './Components/showlistComponent';
 function App() {
-  const count = useSelector(state => state.counter);
-  const dispatch = useDispatch();
   return (
     <div className="App">
-      <h1>Counter Using React Redux</h1>
-      <button onClick={() => dispatch(decNumber())} >-</button>
-      <span>{count}</span>
-      <button onClick={() => dispatch(incNumber())}>+</button>
+      <h1>ToDo list</h1>
+      <AddComponent />
+      <ShowlistComponent />
     </div>
   );
 }
