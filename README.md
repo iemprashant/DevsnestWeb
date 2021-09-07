@@ -7,6 +7,9 @@
 `You can pick up ✍ an idea for the projects ⚡ to practice here and begin`
 
 ## ⤵️List of projects🎓
+1.  # [**Weather App(with Redux)** (THA-28 & 29)](https://iemprashantweatherapp.netlify.app).📃
+    ***
+    <img src="./THA-IMAGES/THA-28-29.png" alt="">
 1.  # [**Todo List(with Redux)** (THA-27)](https://iemprashanttha27.netlify.app).📃
     ***
     <img src="./THA-IMAGES/THA-27A.png" alt="">
